@@ -56,7 +56,10 @@ $ python manage.py migrate
 
  - Add more functionalites, Profile editing is under process.
  - Adding more JavaScript code.
+## Author
+Deepanshu Rana - [Github](https://github.com/deepanshurana) 
 
+Email - mailme.deepanshu45@gmail.com
 
 License
 ----
