@@ -1,0 +1,6 @@
+Django==1.9
+django-crispy-forms
+django-markdown-deux
+django-pagedown
+markdown2
+Pillow

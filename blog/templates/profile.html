@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load urlify %}
+
+{% block content %}
+
+<div class="container">
+    <div class="span3 well">
+        <center>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="{{userObj.profilePic.url}}" name="aboutme" width="140" height="140" class="img-circle"></a>
+        <h3>{{ userObj}}</h3>
+        <em>click my face </em>
+		</center>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">Full Information</h4>
+                    </div>
+                <div class="modal-body">
+                    <center>
+                    <img src="{{userObj.profilePic.url}}" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">{{userObj.user}} <small>India</small></h3>
+                    <span><strong>Info: </strong></span>
+                        <span class="label label-info">Age: {{userObj.age}}</span>
+                        <span class="label label-info">Gender: {{userObj.gender}}</span>
+                        <span class="label label-success">Total Posts: {{countPost}}</span>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        {{userObj.bio}}</p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <a role="button" class="btn btn-primary" href="{% url 'edit_profile' %}"><i class="fa fa-pencil"></i>Edit</a>
+                    <center>
+                    <a role="button" class="btn btn-success" href="{% url 'posts:list' %}">Go to the HomePage.</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+

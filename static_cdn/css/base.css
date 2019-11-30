@@ -1,0 +1,31 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "";
+}
+
+
+body{
+    background-image: url('images/blog.jpeg');
+    background-size: 100% 100%;
+}
+
+h1 {
+    color: #777777;
+}
+
+.wmd-panel{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.comment-reply{
+    display:none;
+}
+.centered{
+    text-align: center;
+}
+
+.toTheRight{
+    text-align: right;
+}
+
+
