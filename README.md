@@ -57,6 +57,7 @@ $ python manage.py migrate
  - Add more functionalites, Profile editing is under process.
  - Adding more JavaScript code.
 
+
 License
 ----
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
