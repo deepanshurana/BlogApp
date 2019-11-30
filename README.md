@@ -1,5 +1,5 @@
-# BlogApp - <Powered by Django> 
-
+# BlogApp - Powered by Django 
+![Blog](https://media.giphy.com/media/KyBcjq9WmanlmnHvTi/giphy.gif)
 
 # Main Freatures!
 
@@ -8,9 +8,18 @@
   - The authentication system in Django aims to be very generic and doesn’t provide some features commonly found in web authentication systems. Solutions for some of these common problems have been implemented in third-party packages:
 
     -Password strength checking
+    
     -Throttling of login attempts
+    
     -Authentication against third-parties (OAuth, for example)
+    
     -Object-level permissions
+### Form Preview
+
+![formPreview](https://media.giphy.com/media/MY5vaG1QC0TTMOpEaB/giphy.gif)
+
+### and supports markdown editor.
+![Markdown](https://media.giphy.com/media/jsUFn5RHw6BIb8N4g8/giphy.gif)
 
 ### Installation
 Requires django-version<=1.9.13 and python2=2.7.9 or above.
